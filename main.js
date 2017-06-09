@@ -21,7 +21,8 @@ function longestString(array) {
       valueLength = array[i].length;
       answer = array[i];
     }
-  } return answer;
+  }
+  return answer;
 }
 
 console.assert(longestString(strings) === 'collection', {"message": "longestString should return 'collection'"});
@@ -42,7 +43,8 @@ function smallestNumber(array) {
     if (array[i] < answer) {
       answer = array[i];
     }
-  } return answer;
+  }
+  return answer;
 }
 
 console.assert(smallestNumber(numbers) === 1, {"message": "smallestNumber should return 1"});
@@ -59,7 +61,8 @@ function getEvens(array) {
     if (array[i] % 2 == 0) {
       answer.push(array[i]);
     }
-  } return answer;
+  }
+  return answer;
 }
 
 
@@ -77,7 +80,8 @@ function arrayReverser(array) {
   var answer = [];
   for (var i = Math.max(array.length-1, 0); i >= 0; i--) {
     answer.push(array[i]);
-  } return answer;
+  }
+  return answer;
 }
 
 console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
@@ -92,7 +96,8 @@ function sumArrayOfNumbers(array) {
   var total = 0;
   for (var i = 0; i < array.length; i++) {
     total = total + array[i];
-  } return total;
+  }
+  return total;
 }
 
 console.assert(sumArrayOfNumbers(numbers) === 177, {'message': 'sumArrayOfNumbers should return 177'});
@@ -109,7 +114,8 @@ function numbersOver10(array) {
     if (array[i] > 10) {
       answer.push(array[i]);
     }
-  } return answer;
+  }
+  return answer;
 }
 
 console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message': 'numbersOver10 should return "12,18,11,101"'});
@@ -126,7 +132,8 @@ function numbersOverX(array, num) {
     if (array[i] > num) {
       answer.push(array[i]);
     }
-  } return answer;
+  }
+  return answer;
 }
 
 console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'numbersOverX should return "18,101"'});
@@ -145,7 +152,8 @@ function joinArrays(array) {
     for (j = 0; j < array[i].length; j++) {
       answer.push(array[i][j]);
     }
-  } return answer;
+  }
+  return answer;
 }
 
 /*
